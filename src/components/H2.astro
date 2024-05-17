@@ -1,7 +1,7 @@
 ---
-const { separator } = Astro.props;
+const { separator, id } = Astro.props;
 ---
 
-<div class={"w-full sm:w-full max-w-6xl mb-20 px-2 xs:px-5 text-left" + (separator ? " border-b border-secondary" : "")}>
+<div id={id} class={"scroll-m-24  w-full sm:w-full max-w-6xl mb-20 px-2 xs:px-5 text-left" + (separator ? " border-b border-secondary" : "")}>
     <h2 class="text-4xl w-full sm:w-8/12 max-w-3xl"><slot /></h2>
 </div>
