@@ -9,13 +9,13 @@ import Layout from "../layouts/Layout.astro";
     <section class="baa flex flex-col justify-center items-center text-center leading-none mb-28">
         <h1 class="text-7xl sm:text-[100px] text-background mt-36 max-w-5xl px-2 xs:px-5">El mejor cafe de <span class="text-primary">todo</span> este mundo</h1>
         <div class="space-x-4 xs:space-x-10 mt-10">
-            <Button>Menu</Button>
-            <Button variant="outline">Ver mas</Button>
+            <Button href="/menu">Menu</Button>
+            <Button href="#second" variant="outline">Ver mas</Button>
         </div>
         <img class="xx w-full max-w-6xl px-2 xs:px-5 aspect-video object-cover bg-center rounded-3xl mt-32 -mb-28" src="https://images.unsplash.com/photo-1542372147193-a7aca54189cd?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
     </section>
 
-    <section class="flex flex-col items-center py-20">
+    <section id="second" class="flex flex-col items-center py-20">
         <div class="max-w-6xl px-2 xs:px-5 space-y-8 w-full">
             <h2 class="text-4xl w-full sm:w-8/12 max-w-3xl">Estaditicas positibas muestasn el ducces de nuestar companio</h2>
             <p class="text-lg xs:text-xl w-full xs:w-8/12 max-w-3xl font-semibold">Ventas fuertes, buenos clientes noas ayudan a seguir mejorando nuestas habilidades y crecimiento en equipo</p>
@@ -44,7 +44,7 @@ import Layout from "../layouts/Layout.astro";
             <div class="space-y-10">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt provident ad nemo rem architecto ex sed minus. Eligendi fuga qui reprehenderit amet molestias, aperiam quia architecto unde sed consectetur.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quis adipisci laudantium placeat animi, repellat nihil quibusdam quaerat. Natus magnam voluptas fugit, ullam totam earum repudiandae nesciunt ipsa nihil libero?</p>
-                <Button>Ver Menu</Button>
+                <Button href="/menu">Ver Menu</Button>
             </div>
         </div>
         <div class="flex max-w-6xl px-2 xs:px-5 w-full items-center flex-col sm:flex-row-reverse gap-10 sm:gap-10 md:gap-20 mt-20">
@@ -52,7 +52,7 @@ import Layout from "../layouts/Layout.astro";
             <div class="space-y-10">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt provident ad nemo rem architecto ex sed minus. Eligendi fuga qui reprehenderit amet molestias, aperiam quia architecto unde sed consectetur.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quis adipisci laudantium placeat animi, repellat nihil quibusdam quaerat. Natus magnam voluptas fugit, ullam totam earum repudiandae nesciunt ipsa nihil libero?</p>
-                <Button variant="outline">Ver Menu</Button>
+                <Button variant="outline" href="/menu">Ver Menu</Button>
             </div>
         </div>
     </section>
@@ -76,6 +76,10 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style is:global>
+    #second{
+        scroll-margin: 30px;
+    }
+
     .xx {
         filter: drop-shadow(0 -30mm 30mm rgba(250, 198, 96, 0.15));
     }
