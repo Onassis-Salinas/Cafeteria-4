@@ -9,6 +9,9 @@ export default {
                 foreground: "#202020",
                 background: "#F2F2F2",
             },
+            screens: {
+                xs: "380px",
+            },
         },
     },
     plugins: [],
