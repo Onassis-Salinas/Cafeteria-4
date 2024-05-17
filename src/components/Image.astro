@@ -1,0 +1,33 @@
+---
+const { url } = Astro.props;
+---
+
+<div class="xxx ml-1 mr-6 mb-5 aspect-[4/5] w-9/12 bg-cover max-w-sm rounded-3xl sm:min-w-64" style=`background-image: url(${url});`></div>
+
+<style>
+    .xxx {
+        position: relative;
+    }
+    .xxx::after {
+        content: "";
+        border-radius: inherit;
+        border: 4px solid #fac660;
+        top: 10px;
+        left: 10px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    @media (min-width: 640px) {
+        .xxx::after {
+            content: "";
+            border-radius: inherit;
+            border: 4px solid #fac660;
+            top: 20px;
+            left: 20px;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+    }
+</style>

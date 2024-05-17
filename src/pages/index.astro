@@ -1,33 +1,36 @@
 ---
+import Button from "../components/Button.astro";
+import H2 from "../components/H2.astro";
+import Image from "../components/Image.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Inicio">
     <section class="baa flex flex-col justify-center items-center text-center leading-none mb-28">
-        <h1 class="text-[100px] text-background mt-36 max-w-5xl">El mejor cafe de <span class="text-primary">todo</span> este mundo</h1>
-        <div class="flex gap-10 mt-10">
-            <button class="rounded-full bg-primary px-8 py-2 font-medium">Menu</button>
-            <button class="rounded-full border-primary border-2 px-8 py-0 font-medium text-background" style="box-sizing: border-box;">Ver mas</button>
+        <h1 class="text-7xl sm:text-[100px] text-background mt-36 max-w-5xl px-2 xs:px-5">El mejor cafe de <span class="text-primary">todo</span> este mundo</h1>
+        <div class="space-x-4 xs:space-x-10 mt-10">
+            <Button>Menu</Button>
+            <Button variant="outline">Ver mas</Button>
         </div>
-        <img class="xx w-full max-w-6xl aspect-video object-cover bg-center rounded-3xl mt-32 -mb-28" src="https://images.unsplash.com/photo-1542372147193-a7aca54189cd?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        <img class="xx w-full max-w-6xl px-2 xs:px-5 aspect-video object-cover bg-center rounded-3xl mt-32 -mb-28" src="https://images.unsplash.com/photo-1542372147193-a7aca54189cd?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
     </section>
 
     <section class="flex flex-col items-center py-20">
-        <div class="max-w-6xl space-y-8 w-full">
-            <h2 class="text-4xl w-8/12 max-w-3xl">Estaditicas positibas muestasn el ducces de nuestar companio</h2>
-            <p class="text-xl w-8/12 max-w-3xl font-bold">Ventas fuertes, buenos clientes noas ayudan a seguir mejorando nuestas habilidades y crecimiento en equipo</p>
+        <div class="max-w-6xl px-2 xs:px-5 space-y-8 w-full">
+            <h2 class="text-4xl w-full sm:w-8/12 max-w-3xl">Estaditicas positibas muestasn el ducces de nuestar companio</h2>
+            <p class="text-lg xs:text-xl w-full xs:w-8/12 max-w-3xl font-semibold">Ventas fuertes, buenos clientes noas ayudan a seguir mejorando nuestas habilidades y crecimiento en equipo</p>
         </div>
 
-        <div class="w-full flex flex-wrap gap-10 justify-between mt-20 max-w-6xl">
-            <div class="w-1/4 min-w-sm">
+        <div class="w-full flex flex-wrap gap-8 justify-evenly sm:justify-between mt-10 sm:mt-20 max-w-6xl px-2 xs:px-5">
+            <div class="w-1/4 min-w-44">
                 <p>Temporibus quas veritatis in possimus dignissimos provident architecto perferendis nostrum aut pariatur.</p>
                 <h4 class="text-2xl font-bold mt-10">92%</h4>
             </div>
-            <div class="w-1/4 min-w-sm">
+            <div class="w-1/4 min-w-44">
                 <p>Temporibus quas veritatis in possimus dignissimos provident architecto perferendis nostrum aut pariatur.</p>
                 <h4 class="text-2xl font-bold mt-10">30%</h4>
             </div>
-            <div class="w-1/4 min-w-sm">
+            <div class="w-1/4 min-w-44">
                 <p>Temporibus quas veritatis in possimus dignissimos provident architecto perferendis nostrum aut pariatur.</p>
                 <h4 class="text-2xl font-bold mt-10">48%</h4>
             </div>
@@ -35,42 +38,38 @@ import Layout from "../layouts/Layout.astro";
     </section>
 
     <section class="baa flex flex-col items-center py-20 text-background">
-        <div class="w-full max-w-6xl mb-20">
-            <h2 class="text-4xl w-8/12 max-w-3xl">Lorem ipsum dolor sit, amet consectetur <span class="text-primary">adipisicing</span> elit. Tempore, cumque?</h2>
-        </div>
-        <div class="flex max-w-6xl w-full items-center gap-20">
-            <div class="xxx aspect-[4/5] w-full bg-cover max-w-sm rounded-3xl bg-[url(https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]"></div>
+        <H2>Lorem ipsum dolor sit, amet consectetur <span class="text-primary">adipisicing</span> elit. Tempore, cumque?</H2>
+        <div class="flex max-w-6xl px-2 xs:px-5 w-full items-center flex-col sm:flex-row gap-10 sm:gap-10 md:gap-20">
+            <Image url="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
             <div class="space-y-10">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt provident ad nemo rem architecto ex sed minus. Eligendi fuga qui reprehenderit amet molestias, aperiam quia architecto unde sed consectetur.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quis adipisci laudantium placeat animi, repellat nihil quibusdam quaerat. Natus magnam voluptas fugit, ullam totam earum repudiandae nesciunt ipsa nihil libero?</p>
-                <button class="rounded-full bg-primary px-8 py-2 font-medium text-foreground">Ver Menu</button>
+                <Button>Ver Menu</Button>
             </div>
         </div>
-        <div class="flex max-w-6xl w-full items-center gap-20 mt-20">
+        <div class="flex max-w-6xl px-2 xs:px-5 w-full items-center flex-col sm:flex-row-reverse gap-10 sm:gap-10 md:gap-20 mt-20">
+            <Image url="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
             <div class="space-y-10">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt provident ad nemo rem architecto ex sed minus. Eligendi fuga qui reprehenderit amet molestias, aperiam quia architecto unde sed consectetur.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quis adipisci laudantium placeat animi, repellat nihil quibusdam quaerat. Natus magnam voluptas fugit, ullam totam earum repudiandae nesciunt ipsa nihil libero?</p>
-                <button class="rounded-full border-primary border-2 px-8 py-0 font-medium text-background" style="box-sizing: border-box;">Ver Menu</button>
+                <Button variant="outline">Ver Menu</Button>
             </div>
-            <div class="xxx aspect-[4/5] w-full bg-cover max-w-sm rounded-3xl bg-[url(https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]"></div>
         </div>
     </section>
     <section class="py-10 flex flex-col items-center">
-        <div class="w-full max-w-6xl mb-20">
-            <h2 class="text-4xl w-8/12 max-w-3xl">Encuentranos</h2>
-        </div>
-        <div class="flex flex-1 max-w-6xl gap-20 w-full items-center">
-            <div class="xxx aspect-square w-full bg-cover bg-center rounded-3xl max-w-sm bg-[url(https://images.unsplash.com/photo-1446226760091-cc85becf39b4?q=80&w=3774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]"></div>
+        <H2>Encuentranos</H2>
+        <div class="flex flex-1 max-w-6xl px-2 xs:px-5 flex-col sm:flex-row gap-10 sm:gap-10 md:gap-20 w-full items-center">
+            <Image url="https://images.unsplash.com/photo-1446226760091-cc85becf39b4?q=80&w=3774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
             <div class="space-y-10">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt provident ad nemo rem architecto ex sed minus. Eligendi fuga qui reprehenderit amet molestias, aperiam quia architecto unde sed consectetur.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quis adipisci laudantium placeat animi, repellat nihil quibusdam quaerat. Natus magnam voluptas fugit, ullam totam earum repudiandae nesciunt ipsa nihil libero?</p>
-                <button class="rounded-full bg-primary px-8 py-2 font-medium text-foreground flex gap-1 items-center">
+                <Button icon>
                     <img
                         class="aspect-square h-5"
                         src="data:image/png;base64,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"
                     />
                     Ubicacion
-                </button>
+                </Button>
             </div>
         </div>
     </section>
@@ -79,20 +78,6 @@ import Layout from "../layouts/Layout.astro";
 <style is:global>
     .xx {
         filter: drop-shadow(0 -30mm 30mm rgba(250, 198, 96, 0.15));
-    }
-
-    .xxx {
-        position: relative;
-    }
-    .xxx::after {
-        content: "";
-        border-radius: inherit;
-        border: 4px solid #fac660;
-        top: 20px;
-        left: 20px;
-        width: 100%;
-        height: 100%;
-        position: absolute;
     }
 
     .baa {

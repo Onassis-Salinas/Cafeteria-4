@@ -1,0 +1,18 @@
+---
+const { variant, icon } = Astro.props;
+---
+
+{
+    (!variant || variant === "primary") && (
+        <button class={"rounded-full bg-primary text-foreground px-8 py-2 font-medium" + (icon ? " flex gap-1 items-center" : "")}>
+            <slot />
+        </button>
+    )
+}
+{
+    variant === "outline" && (
+        <button class={"rounded-full border-primary border-2 px-8 py-2 font-medium text-background" + (icon ? " flex gap-1 items-center" : "")} style="box-sizing: border-box;">
+            <slot />
+        </button>
+    )
+}
